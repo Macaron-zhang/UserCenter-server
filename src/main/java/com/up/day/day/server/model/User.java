@@ -6,7 +6,11 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import java.io.Serializable;
 import java.time.LocalDateTime;
+
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.experimental.FieldNameConstants;
 
 /**
  * 用户表
@@ -14,12 +18,15 @@ import lombok.Data;
  */
 @TableName(value ="user")
 @Data
+@FieldNameConstants
+//@Builder
 public class User implements Serializable {
     /**
      * 主键
      */
 //    @TableId(value = "id",type = IdType.NONE)
-    @TableId(value = "id",type = IdType.INPUT)
+//    @TableId(value = "id",type = IdType.INPUT)
+    @TableId(value = "id",type = IdType.AUTO)
     private Long id;
 
     /**
