@@ -92,7 +92,7 @@ class UserServiceTest {
         result = userService.userRegister(userAccount, userPwd, userCheckPwd);
         Assertions.assertEquals(-1L, result);
         // 6. 正常插入
-        userAccount = "wakaka";
+        userAccount = "admin";
         userPwd = "12345678";
         userCheckPwd = "12345678";
         result = userService.userRegister(userAccount, userPwd, userCheckPwd);
