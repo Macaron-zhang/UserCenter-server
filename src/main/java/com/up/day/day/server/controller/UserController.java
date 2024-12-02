@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.List;
 
-@RestController// 适用于编写RestFul风格的API,返回值格式默认为JSON类型
+@RestController// NOTE : 适用于编写RestFul风格的API,返回值格式默认为JSON类型
 @RequestMapping("/user")
 public class UserController {
 
